@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">QuietHoursReRedux</string>
+    <string name="create_new_event">Create New Event</string>
+    <string name="empty_list">No Alarms Set</string>
+    <string name="title_section3">Section 3</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_data_base_handler">DataBaseHandler</string>
+    <string name="background_check">Background Check</string>
+    <string name="boot_reciever">Boot Receiver</string>
+</resources>

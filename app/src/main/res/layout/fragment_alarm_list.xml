@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hettinger.sean.quiethoursreredux.AlarmList"
+    android:id="@+id/alarmListLayout"
+    android:theme="@android:style/Theme.Holo"
+    >
+
+
+
+
+
+    <ListView
+        android:id="@+id/alarmList"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        />
+
+
+    <TextView
+        android:id="@+id/emptyView"
+        android:textSize="50dp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/empty_list"
+        />
+
+
+    <Button
+        android:text="@string/create_new_event"
+        android:id="@+id/createNewEventButton"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:enabled="false"
+        android:visibility="invisible"/>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,140 @@
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/eventSelectionLayout"
+        android:weightSum="1"
+        android:theme="@android:style/Theme.Holo"
+        android:background="?android:windowBackground"
+        tools:context="com.hettinger.sean.quiethoursreredux.NewEventFragment"
+        >
+
+
+
+        <TextView
+            android:id="@+id/startTime"
+            android:text="Start Time:"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            />
+
+        <TimePicker
+            android:id="@+id/startTimePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="175dp"
+            android:timePickerMode="spinner"
+            android:layout_below="@id/startTime"
+            android:layout_marginBottom="0dp"
+            />
+
+        <TextView
+            android:id="@+id/endTime"
+            android:text="End Time:"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_below="@id/startTimePicker"
+            />
+
+
+        <TimePicker
+            android:id="@+id/endTimePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="175dp"
+            android:timePickerMode="spinner"
+            android:layout_below="@id/endTime"
+            android:layout_marginBottom="15dp"
+            />
+
+
+        <CheckBox
+            android:id="@+id/sundayCheckBox"
+            android:text="S"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/endTimePicker"
+            android:padding="-1dp"
+            android:layout_margin="2dp"
+
+            />
+
+        <CheckBox
+            android:id="@+id/mondayCheckBox"
+            android:text="M"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/endTimePicker"
+            android:layout_toRightOf="@id/sundayCheckBox"
+            android:padding="-1dp"
+            android:layout_margin="2dp"
+            />
+
+        <CheckBox
+            android:id="@+id/tuesdayCheckBox"
+            android:text="T"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/endTimePicker"
+            android:layout_toRightOf="@id/mondayCheckBox"
+            android:padding="-1dp"
+            android:layout_margin="2dp"
+            />
+
+        <CheckBox
+            android:id="@+id/wednesdayCheckBox"
+            android:text="W"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/endTimePicker"
+            android:layout_toRightOf="@id/tuesdayCheckBox"
+            android:padding="-1dp"
+            android:layout_margin="5dp"
+            />
+
+        <CheckBox
+            android:id="@+id/thursdayCheckBox"
+            android:text="Th"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/endTimePicker"
+            android:layout_toRightOf="@id/wednesdayCheckBox"
+            android:padding="-1dp"
+            android:layout_margin="5dp"
+            />
+
+        <CheckBox
+            android:id="@+id/fridayCheckBox"
+            android:text="F"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/endTimePicker"
+            android:layout_toRightOf="@id/thursdayCheckBox"
+            android:padding="-1dp"
+            android:layout_margin="5dp"
+            />
+
+        <CheckBox
+            android:id="@+id/saturdayCheckBox"
+            android:text="S"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/endTimePicker"
+            android:layout_toRightOf="@id/fridayCheckBox"
+            android:padding="-1dp"
+            android:layout_margin="5dp"
+            />
+
+        <Button
+            android:id="@+id/saveAlarmButton"
+            android:text="Save Alarm"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="30dp"
+            />
+
+
+
+
+</RelativeLayout>
