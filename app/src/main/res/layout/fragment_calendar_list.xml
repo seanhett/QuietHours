@@ -18,9 +18,10 @@
     <TextView
         android:id="@+id/calendarEmptyView"
         android:textSize="50dp"
+        android:gravity="center"
         android:layout_centerInParent="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/empty_list"
+        android:text="No Events Found"
         />
 </RelativeLayout>
